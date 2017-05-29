@@ -18,16 +18,22 @@ def getUserInfo():
     user = client.get_current_user()
     return json.dumps(user)
 
+def buyBitCoin(account_id, amount, currency):
+    client = connectClient()
+    client.buy(account_id, amount, currency)
+
+def sellBitCoin(account_id, amount, currency):
+    client = connectClient()
+    client.sell(account_id, amount, currency)
+
 # Here's our "unit tests".
 class functionTests(unittest.TestCase):
 
     def testConnectClient(self):
         connectClient()
-        print("ToBeImplemented")
 
     def testGetUserInfo(self):
         getUserInfo()
-        print("ToBeImplemented")
 
 def main():
     unittest.main()
