@@ -1,7 +1,7 @@
-import pandas as pd
+import executionsignal
 
 def getEthereiumBuySignal(time):
-    return True
+    return executionsignal.BuySignal.BUY
 
 def getLitecoinBuySignal(time):
-    return True
+    return executionsignal.BuySignal.SELL

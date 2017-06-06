@@ -1,7 +1,7 @@
 Feature: Determine Ethereum Buy Signal
 
-  Scenario: Given historical data of Ehtereum and Bitcoin
+  Scenario: Computing Execution Signal For Ehereum
 
-    Given A historical data of ethereum, bitcoin and time
-        When determineBuySignalForEthereum is called
-        Then It will return a ExecutionSignal Signal
+    Given A time in space
+        When ComputeEthereiumBuySignal is Called
+        Then An ExecutionSignal will be returned
