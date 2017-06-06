@@ -4,4 +4,4 @@ Feature: Determine Ethereum Buy Signal
 
     Given A historical data of ethereum, bitcoin and time
         When determineBuySignalForEthereum is called
-        Then It will return a (Buy/Sell) Signal
+        Then It will return a ExecutionSignal Signal

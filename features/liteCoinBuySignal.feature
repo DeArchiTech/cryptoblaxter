@@ -4,4 +4,4 @@ Feature: Determine LiteCoin Buy Signal
 
     Given A historical data of litecoin, bitcoin and time
         When determineBuySignalForLitecoin is called
-        Then It will return a (Buy/Sell) Signal
+        Then It will return a ExecutionSignal
