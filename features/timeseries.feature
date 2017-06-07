@@ -1,7 +1,8 @@
-#Feature: Analysis Bitcoin with Ethereum Data by using time series
-#
-#  Scenario: Given x and y as input, it will return A Time Series computation
-#
-#    Given A collection of Ethereum and Bitcoin Data
-#        When Analysis by time series function is called
-#        Then it will comput and return the time series computation
+Feature: Allows a user to use time series, a set of input as trainning data
+  and output its timeseries prediction
+
+  Scenario: Computing its timeseries forecast
+
+    Given A time in space
+        When timeSeriesForecast is called
+        Then 138 will be returned
