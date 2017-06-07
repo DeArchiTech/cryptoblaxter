@@ -1,7 +1,7 @@
 Feature: Determine LiteCoin Buy Signal
 
-  Scenario: Given historical data of Litecoin and Bitcoin
+  Scenario: Computing Execution Signal For LiteCoin
 
-    Given A historical data of litecoin, bitcoin and time
-        When determineBuySignalForLitecoin is called
-        Then It will return a ExecutionSignal
+    Given A time in space
+        When ComputeLiteCoinBuySignal is called
+        Then An ExecutionSignal will be returned
