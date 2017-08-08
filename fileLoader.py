@@ -2,7 +2,13 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 def plotAll():
+    plotBtc()
+    plotEth()
+
+def plotBtc():
     plot('data/bitcoinity_data.csv',"Time","USD","Bitcoin 2010 - Current")
+
+def plotEth():
     plot('data/coindesk-ETH-close_data-2015-08-31_2017-05-22.csv',"Time","USD","ETH 2015 - Current")
 
 def plot(input, xaxis, yaxis, title):
