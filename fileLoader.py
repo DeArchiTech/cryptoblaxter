@@ -13,6 +13,7 @@ def plotEth():
 
 def plot(input, xaxis, yaxis, title):
     df_coindesk = pd.read_csv(input)
+    df_coindesk['Date'] = pd.to_datetime(df_coindesk.Date)
     ax = df_coindesk.plot(style=['o', 'rx'])
     ax.set_xlabel(xaxis)
     ax.set_ylabel(yaxis)
